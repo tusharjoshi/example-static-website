@@ -8,9 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="width-full h-full">
         @include('layout.header')
-        @yield('appContents')
+        <main class="w-full h-200">
+            @yield('appContents')
+        </main>
         @include('layout.footer')
     </div>
 </body>
